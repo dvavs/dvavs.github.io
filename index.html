@@ -1,40 +1,146 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dylan Vavra</title>
+    <!-- Reset CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Personal CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-    <title>About Me</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-
+    <!-- jQuery -->
 </head>
 
 <body>
-    <header class='masthead'>
-        <p class='masthead-intro'>Hi I'm</p>
-        <h1 class='masthead-heading'>Dylan Vavra</h1>
-    </header>
-    <section class="details">
-      <h1>Introduction</h1>
-      <p>I am a student in the University of Richmond Full Stack Web Development coding bootcamp. I currently work as a research assistant at the same university. I had been planning to attend graduate school in either psychology or neuroscience to obtain a PhD, but I've decided to take another path. I chose to join this bootcamp to hopefully jumpstart a new career.</p>
-      <h1>Where I'm From</h1>
-      <p>I was born in Orlando, Florida, but moved to Virginia at the age of 7. I don't remember much before that time, so I consider Matoaca, VA to be my hometown.</p>
-      <h1>What are your favorite hobbies?</h1>
-      <p>I love hiking, rock climbing, and indulging in creative activities - from drawing, to painting, to pottery. I love to <i>play</i> sports, and my favorites are volleyball and ultimate. I'm also a big fan of leisurely activities, like playing video games or relaxing on the porch with a beer and a good friend.</p>
-      <h1>What's your dream job?</h1>
-      <p>I don't really have a dream job; I can see myself being quite happy in a number of career industries and settings. Rather, my chief motivating force is to be useful in whatever I do. Further, I want to master whatever discipline I find myself in to the degree that I can help others learn it too.</p>
-      <h1>Where do you live?</h1>
-      <p>I live in Henrico, just outside of Richmond, VA.</p>
-      <h1>Why do you want to be a web developer?</h1>
-      <p>I want to be a web developer because the profession strikes me as one that would allow for a perfect marriage of my drive to master practical skills and my desire to exercise creativity.</p>
-    </section>
+    <div class="container-fluid">
+        <div class="wrap">
+            <div class="row">
+                <nav class="navbar navbar-expand-sm">
+                    <!-- Navspace div constrains the possible width of navbar content -->
+                    <div class="navspace">
+                        <div class="navbar-brand">
+                            <h1>Dylan Vavra</h1>
+                        </div>
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="index.html">About</a></li>
+                            <a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                            <a class="nav-link" href="contact.html">Contact</a></li>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- Content body -->
 
-    <footer id="footer">
-        <ul class="social">
-          <li><a href="http://www.github.com/usernamehere">Github</a></li>
-        </ul>
-    </footer>
+            <div class="row">
+                <!-- Empy column to preserve space to the side of content -->
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10">
+                    <div class="row">
+                        <div class="content col-sm-12">
+                            <h1>About Me</h1>
+                            <hr>
+                            <!-- Responsive image -->
+                            <img class="img-fluid" id="profile-pic" src="assets/images/Krusty_Krab.jpg">
+                            <p>My name is Dylan Vavra. In 2014, I graduated from the University of Richmond
+                                with
+                                a
+                                Bachelor's in
+                                Psychology, and since then I have been working as a research assistant (in
+                                the
+                                very
+                                same
+                                department!). For as long as I can remember, my goal has been to attend
+                                graduate
+                                school,
+                                earn a
+                                Ph.D, and go on to be a professor. However, over the past few years I have
+                                gotten
+                                more
+                                of a
+                                holistic view of academia - the culture, the job market, the economic
+                                realities
+                                -
+                                and
+                                have
+                                concluded that the other goals I have for myself and my family are worth
+                                more to
+                                me.
+                                I've
+                                decided to venture on a new career path, so I've joined UR's Full Stack Web
+                                Development
+                                Bootcamp. </p>
+                            <p>My background has helped me develop some skills that I think will come in
+                                handy
+                                as I
+                                transition
+                                into a different line of work. I am skilled in scientific writing, have
+                                exposure
+                                to
+                                a
+                                wide
+                                breadth of platforms (from Qualtrics, to Eyelink eyetracking systems, to
+                                Noldus
+                                behavioral
+                                observation software, to ArcGIS Pro and ArcGIS Online), and I am no stranger
+                                to
+                                hard
+                                work. I
+                                have spent considerable time debugging experiment applications and
+                                copyediting
+                                manuscripts
+                                for
+                                publication, and I pride myself on being very keenly attentive to detail.
+                                Relatedly,
+                                management
+                                of massive datasets and stimulus databases has helped me develop an accumen
+                                for
+                                digital
+                                organization. Finally, I have a thorough understanding of research design
+                                and
+                                data
+                                analysis.
+                            </p>
+                            <p>When I am not learning new things in the world of web development, you can
+                                find
+                                me
+                                working on
+                                side research projects, hiking or rock climbing with my wife, or relaxing on
+                                the
+                                couch
+                                with
+                                my
+                                cats Herbie and Tiptoe. Occasionally I like to have a beer - even more so if
+                                I
+                                can
+                                do it
+                                in
+                                nature. My profile picture shows me doing just that, on a beach outside
+                                Dunedin,
+                                New
+                                Zealand.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Another empty column to preserve space outside content -->
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
+
+        <!-- Sticky footer -->
+        <div class="row">
+            <footer>
+                <p>Website dreamt up and built by Dylan Vavra &copy;</p>
+            </footer>
+        </div>
+    </div>
+
 </body>
 
 </html>
