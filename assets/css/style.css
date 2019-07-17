@@ -4,12 +4,11 @@
 }
 
 body    {
-    background: #252627;
-    display: block;
+
 }
 
 #navbar {
-    background: #181818;
+    background: #cccccc;
     width: 60px;
     height: 100%;
     position: absolute;
@@ -53,17 +52,7 @@ nav {
 }
 
 #navbar a.active, #navbar a:hover   {
-    color: #48a;
-}
-
-
-#nav_bar nav a:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    display: block;
-    text-align: center;
-    opacity: 0;
+    color: #cc0033;
 }
 
 #navbar a   {
@@ -73,17 +62,21 @@ nav {
     line-height: 51px;
     height: 51px;
     position: relative;
-    text-decoration: none;
     cursor: pointer;
+}
+
+#nav_bar nav a:before {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    text-align: center;
+    opacity: 0;
 }
 
 #navbar nav a:hover *:before   {
     font-family: Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 10px;
-    letter-spacing: auto;
+    font-size: 11px;
     width: 100%;
-    line-height: 10px;
-    transition: all .5s ease;
 }
 
 #navbar nav a:hover .fa-home:before {
