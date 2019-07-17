@@ -1,5 +1,6 @@
 *   {
     box-sizing: border-box;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body    {
@@ -55,6 +56,16 @@ nav {
     color: #48a;
 }
 
+
+#nav_bar nav a:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    display: block;
+    text-align: center;
+    opacity: 0;
+}
+
 #navbar a   {
     font-size: 22px;
     color: #4d4d4e;
@@ -63,24 +74,32 @@ nav {
     height: 51px;
     position: relative;
     text-decoration: none;
+    cursor: pointer;
 }
 
-
-
-.fa-home:before {
-    content: "\f015";
+#navbar nav a:hover *:before   {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    letter-spacing: auto;
+    width: 100%;
+    line-height: 10px;
+    transition: all .5s ease;
 }
 
-.fa-user-circle:before  {
-    content: "\f2bd";
+#navbar nav a:hover .fa-home:before {
+    content: "HOME";
 }
 
-.fa-folder-open:before  {
-    content: "\f07c";
+#navbar nav a:hover .fa-user-circle:before   {
+    content: "ABOUT ME";
 }
 
-.fa-feather-alt:before {
-    content: "\f56b";
+#navbar nav a:hover .fa-folder-open:before   {
+    content: "MY WORK";
+}
+
+#navbar nav a:hover .fa-feather-alt:before   {
+    content: "CONTACT";
 }
 
 .fa-linkedin:before {
