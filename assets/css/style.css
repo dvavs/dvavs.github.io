@@ -1,11 +1,42 @@
 *   {
     box-sizing: border-box;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body    {
-
+    font-family: tahoma;
 }
+
+
+
+
+
+
+
+
+
+
+/* All background-related CSS */
+
+#bgPic {
+    min-height: 100%;
+    min-width: 1280px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+  
+@media screen and (max-width: 1280px) {
+    img.bgPic {
+        left: 50%;
+        margin-left: -640px;
+    }
+}
+
+
+
+/* All Navbar-related CSS */
 
 #navbar {
     background: #cccccc;
@@ -16,6 +47,7 @@ body    {
     z-index: 3;
     min-height: 500px;
     color: #fff;
+    border-right: 1px solid #8f8f8f;
 }
 
 .logo   {
@@ -52,7 +84,7 @@ nav {
 }
 
 #navbar a.active, #navbar a:hover   {
-    color: #cc0033;
+    color: #660000;
 }
 
 #navbar a   {
@@ -113,6 +145,8 @@ nav {
         left: 0;
         z-index: 3;
         min-height: 0;
+        border-right: none;
+        border-bottom: 1px solid #8f8f8f;
     }
 
     .logo   {
@@ -168,6 +202,21 @@ nav {
         position: absolute;
         left: 25%;
         margin-left: 0;
+    }
+
+}
+
+@media (max-width: 500px)   {
+
+    #navbar ul  {
+        width: 0;
+        display: none;
+    }
+
+    #navbar nav {
+        width: auto;
+        position: absolute;
+        left: 20%
     }
 
 }
