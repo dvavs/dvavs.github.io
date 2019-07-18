@@ -15,11 +15,62 @@ body    {
     width: 100%;
 }
 
+.content    {
+    text-align: center;
+    margin: 30px 10%;
+    padding: 0 20px 20px;
+    max-width: 960px;
+    max-height: 100%;
+}
 
+#dtv    {
+    font-family: 'Caveat', cursive;
+    float: left;
+    color: #660000;
+    font-weight: bold;
+    font-size: 100px;
+    text-shadow:
+        3px 3px 0 #000,
+        -1px -1px 0 #8f8f8f,  
+        1px -1px 0 #8f8f8f,
+        -1px 1px 0 #8f8f8f,
+        1px 1px 0 #8f8f8f;
+}
 
+#hax {
+    margin: 0 auto;
+    max-height: 400px;
+    max-width: 100%;
+    
+}
 
+#homeTag    {
+    float: right;
+}
 
+@media (max-width: 960px)   {
 
+    .content    {
+        text-align: center;
+        margin: 60px auto;
+        padding: 0 20px 20px;
+        max-width: 960px;
+        max-height: 100%;
+    }
+
+}
+
+@media (max-width: 500px)   {
+
+    #dtv    {
+        font-size: 50px;
+    }
+
+    #homeTag    {
+        font-size: 20px;
+    }
+
+}
 
 /* All Navbar-related CSS */
 
@@ -36,7 +87,6 @@ body    {
 }
 
 .logo   {
-    color: #000;
     font-weight:bold;
     text-align: center;
     background: transparent;
@@ -74,6 +124,7 @@ nav {
 
 #navbar a.active, #navbar a:hover   {
     color: #660000;
+    text-decoration: none;
 }
 
 #navbar a   {
@@ -118,14 +169,6 @@ nav {
 
 #navbar nav a:hover .fa-feather-alt:before   {
     content: "CONTACT";
-}
-
-.fa-linkedin:before {
-    content: "\f08c";
-}
-
-.fa-github:before   {
-    content: "\f09b";
 }
 
 @media (max-width: 960px)   {
@@ -191,15 +234,6 @@ nav {
     }
 
 }
-
-/* @media (max-width: 760px)   {
-
-        #navbar nav {
-            position: absolute;
-            left: 20%;
-        }
-    
-} */
 
 @media (max-width: 640px)    {
 
