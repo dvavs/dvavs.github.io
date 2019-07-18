@@ -10,7 +10,7 @@ body    {
 
 .content    {
     text-align: center;
-    margin: 40px 10%;
+    margin: 40px 10px 0 10%;
     padding: 0 20px 20px;
     max-width: 960px;
     max-height: 100%;
@@ -57,6 +57,63 @@ body    {
     width: 50%;
 }
 
+#skillsDisplay, #tagCanvas   {
+    width: 50%;
+}
+
+#skillsDisplay  {
+    float: left;
+}
+
+#tagCanvas  {
+    float: right;
+}
+
+.skill  {
+    margin: 20px auto;
+    border: 2px solid #4d4d4e;
+    border-radius: 10px;
+    background: #fff;
+    clear: both;
+    display: block;
+    width: 100%;
+    height: 150px;
+}
+
+.skill-img  {
+    max-width: 40%;
+    max-height: 90%;
+    margin: 5px;
+}
+
+.skill-L    {
+    float: left;
+    margin-left: 20px;
+}
+
+.skill-R    {
+    float: right;
+    margin-right: 20px;
+}
+
+.subtitle   {
+    margin: 5px;
+    color: #660000;
+    font-size: 28px;
+    line-height: 2em;
+}
+
+.skill p    {
+    margin: 5px;
+    font-size: 17px;
+    line-height: 1.5em;
+}
+
+#wordcloud  {
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+}
 
 #navbar {
     background: #cccccc;
@@ -65,7 +122,7 @@ body    {
     position: absolute;
     top: 0;
     z-index: 3;
-    min-height: 650px;
+    min-height: 685px;
     color: #fff;
     border-right: 1px solid #8f8f8f;
 }
@@ -162,6 +219,25 @@ nav {
         margin: 70px auto;
     }
 
+    #skillsDisplay, #tagCanvas  {
+        clear: both;
+        display: block;
+        width: 100%;
+    }
+
+    #wordcloud  {
+        margin-top: 10px;
+    }
+
+    .skill  {
+        width: 70%;
+        height: 100px;
+    }
+
+    .subtitle   {
+        line-height: 1.2em;
+    }
+
     #navbar {
         width: 100%;
         height: 60px;
@@ -236,6 +312,12 @@ nav {
         font-size: 75px;
     }
 
+    .skill  {
+        width: 100%;
+    }
+
+
+
 }
 
 @media (max-width: 500px)   {
@@ -253,9 +335,29 @@ nav {
         font-size: 20px;
     }
 
+    .subtitle   {
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 1.1em;
+    }
+
+    .skill p    {
+        line-height: 1.2em;
+    }
+
 }
 
 @media (max-width: 360px)   {
+
+    .subtitle   {
+        font-size: 16px;
+
+    }
+
+    .skill p    {
+        font-size: 12px;
+        line-height: 1em;
+    }
 
     #navbar i   {
         width: 45px;
