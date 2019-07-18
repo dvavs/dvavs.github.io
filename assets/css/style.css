@@ -20,77 +20,6 @@ body    {
 
 
 
-/* All home content CSS */
-
-#dvImg  {
-    position: absolute;
-    top: -10px;
-    left: 60px;
-    max-width: 80%;
-    max-height: 100%;
-    opacity: 1;
-}
-
-#hello  {
-    font-family: helvetica;
-    font-size: 80px;
-    position: absolute;
-    top: 38%;
-    left: 20%;
-}
-
-#dtv    {
-    color: #660000;
-}
-
-@media (max-width: 960px)   {
-
-    #dvImg  {
-        position: absolute;
-        top: 60px;
-        left: 0px;
-        max-width: 100%;
-        max-height: 100%;
-        opacity: 1;
-    }
-
-    #hello  {
-        font-family: helvetica;
-        font-size: 50px;
-        position: absolute;
-        top: 42%;
-        left: 35%;
-    }
-
-}
-
-@media (max-width: 640px)    {
-
-    #hello  {
-        font-family: helvetica;
-        font-size: 50px;
-        position: absolute;
-        top: 35%;
-        left: 30%;
-    }
-
-}
-
-@media (max-width: 500px)   {
-
-    #dvImg  {
-        left: -10px;
-    }
-
-    #hello  {
-        font-family: helvetica;
-        font-size: 50px;
-        position: absolute;
-        top: 30%;
-        left: 25%;
-    }
-
-}
 
 /* All Navbar-related CSS */
 
@@ -107,6 +36,9 @@ body    {
 }
 
 .logo   {
+    color: #000;
+    font-weight:bold;
+    text-align: center;
     background: transparent;
     display: block;
     padding: 8px 0;
@@ -222,10 +154,9 @@ nav {
     }
 
     nav {
-        width: 40%;
+        width: auto;
         position: absolute;
-        left: 50%;
-        margin-left: -20%;
+        left: 30%;
         float: left;
         overflow: hidden;
         text-align: center;
@@ -239,9 +170,9 @@ nav {
     }
 
     #navbar ul  {
-        position: static;
-        bottom: 20px;
-        width: auto;
+        position: absolute;
+        top: 0px;
+        right: 0px;
         height: 60px;
         line-height: 60px;
         display: block;
@@ -261,13 +192,25 @@ nav {
 
 }
 
+/* @media (max-width: 760px)   {
+
+        #navbar nav {
+            position: absolute;
+            left: 20%;
+        }
+    
+} */
+
 @media (max-width: 640px)    {
 
     nav {
-        width: 50%;
         position: absolute;
-        left: 25%;
-        margin-left: 0;
+        left: 20%;
+    }
+
+    #navbar ul li   {
+        line-height: 60px;
+        margin: 0;
     }
 
 }
@@ -279,11 +222,9 @@ nav {
         display: none;
     }
 
-    #navbar nav {
-        width: 80%;
-        position: absolute;
-        left: 20%
-    }
+}
+
+@media (max-width: 360px)   {
 
     #navbar i   {
         width: 45px;
