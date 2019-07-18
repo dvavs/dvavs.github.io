@@ -8,24 +8,17 @@ body    {
     background: #fcfcfc;
 }
 
-.main   {
-    margin-left: 120px;
-    margin-right: 60px;
-    min-height: 100%;
-    width: 100%;
-}
-
 .content    {
     text-align: center;
-    margin: 30px 10%;
+    margin: 40px 10%;
     padding: 0 20px 20px;
     max-width: 960px;
     max-height: 100%;
 }
 
-#dtv    {
+.title    {
+    margin-bottom: 15px;
     font-family: 'Caveat', cursive;
-    float: left;
     color: #660000;
     font-weight: bold;
     font-size: 100px;
@@ -37,42 +30,33 @@ body    {
         1px 1px 0 #8f8f8f;
 }
 
-#hax {
-    margin: 0 auto;
+#homeImg {
+    margin: auto;
     max-height: 400px;
     max-width: 100%;
-    
+    display: block;
+    clear: both;
 }
 
 #homeTag    {
+    margin-top: 20px;
     float: right;
+    font-size: 40px;
 }
 
-@media (max-width: 960px)   {
-
-    .content    {
-        text-align: center;
-        margin: 60px auto;
-        padding: 0 20px 20px;
-        max-width: 960px;
-        max-height: 100%;
-    }
-
+#aboutMe    {
+    width: 100%;
+    margin: 50px auto;
+    text-align: left;
+    font-size: 20px;
+    line-height: 2em;
 }
 
-@media (max-width: 500px)   {
-
-    #dtv    {
-        font-size: 50px;
-    }
-
-    #homeTag    {
-        font-size: 20px;
-    }
-
+#profImg    {
+    float: right;
+    width: 50%;
 }
 
-/* All Navbar-related CSS */
 
 #navbar {
     background: #cccccc;
@@ -88,6 +72,7 @@ body    {
 
 .logo   {
     font-weight:bold;
+    text-decoration: none;
     text-align: center;
     background: transparent;
     display: block;
@@ -156,15 +141,15 @@ nav {
 }
 
 #navbar nav a:hover .fa-user-circle:before   {
-    content: "ABOUT ME";
+    content: "ABOUT";
 }
 
 #navbar nav a:hover .fa-code:before   {
-    content: "MY SKILLS";
+    content: "SKILLS";
 }
 
 #navbar nav a:hover .fa-folder-open:before   {
-    content: "MY WORK";
+    content: "WORK";
 }
 
 #navbar nav a:hover .fa-feather-alt:before   {
@@ -173,9 +158,8 @@ nav {
 
 @media (max-width: 960px)   {
 
-    .main   {
-        margin-left: 0;
-        margin-top: 60px;
+    .content    {
+        margin: 70px auto;
     }
 
     #navbar {
@@ -192,7 +176,7 @@ nav {
 
     .logo   {
         float: left;
-        padding: 8px;
+        padding: 0px 8px;
         margin-right: 20px;
     }
 
@@ -213,6 +197,7 @@ nav {
     }
 
     #navbar ul  {
+        width: auto;
         position: absolute;
         top: 0px;
         right: 0px;
@@ -247,6 +232,10 @@ nav {
         margin: 0;
     }
 
+    #title-about, #title-skills    {
+        font-size: 75px;
+    }
+
 }
 
 @media (max-width: 500px)   {
@@ -254,6 +243,14 @@ nav {
     #navbar ul  {
         width: 0;
         display: none;
+    }
+
+    .title    {
+        font-size: 50px;
+    }
+
+    #homeTag    {
+        font-size: 20px;
     }
 
 }

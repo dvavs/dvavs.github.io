@@ -10,11 +10,10 @@
 
     <!-- Reset CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Personal CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Caveat font -->
+    <link href="https://fonts.googleapis.com/css?family=Caveat:700&display=swap" rel="stylesheet">
 
     <!-- Link to Font Awesome JS -->
     <script src="https://kit.fontawesome.com/65ede0d687.js"></script>
@@ -31,7 +30,7 @@
 
 <body>
     <div id="navbar">
-        <a class="logo" rel="index" href="index.html">Logo</a>
+        <a class="logo" rel="index" href="index.html">DV</a>
         <nav>
             <a rel="index" href="index.html"><i class="fas fa-home"></i></a>
             <a rel="about" href="about.html"><i class="fas fa-user-circle"></i></a>
@@ -45,33 +44,39 @@
         </ul>
     </div>
 
-    <div class="columns main">
+    <div class="content">
+        <h1 class="title" id="title-skills">What can he do?</h1>
+        <div id="skillsDisplay">
+            <section class="skill" id="skill-design">
+
+            </section>
+            <section class="skill" id="skill-dev">
+
+            </section>
+            <section class="skill" id="skill-data">
+
+            </section>
+        </div>
+        <section id="wordcloud">
+            <div id="canvas">
+                <ul>
+                    <li>jQuery</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Node JS</li>
+                    <li>BootStrap</li>
+                    <li>Git</li>
+                    <li>AJAX</li>
+                    <li>JSON</li>
+                </ul>
+            </div>
+        </section>
 
     </div>
 
-    <!--
-    <div id="canvas">
-        <ul>
-            <li>jQuery</li>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Node JS</li>
-            <li>BootStrap</li>
-            <li>Git</li>
-            <li>AJAX</li>
-            <li>JSON</li>
-        </ul>
-    </div>
-    -->
-
-    <!-- Personal JS -->
-    <script type="text/javascript" href="assets/javascript/logic.js"></script>
-
-    <!-- Script to set up the TagCanvas word cloud -->
-    <script>
-
-    </script>
+    <!-- Word cloud JS -->
+    <script type="text/javascript" href="assets/javascript/cloud.js"></script>
 
 </body>
 
