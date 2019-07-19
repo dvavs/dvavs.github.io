@@ -1,3 +1,5 @@
+/* Universal Styling */
+
 *   {
     box-sizing: border-box;
 }
@@ -6,6 +8,19 @@ body    {
     font-family: helvetica, tahoma, verdana, sans-serif;
     color: #070707;
     background: #fcfcfc;
+}
+
+a   {
+    color: #660000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #993333;
+}
+
+a:hover  {
+    color: #996666;
 }
 
 .content    {
@@ -30,118 +45,14 @@ body    {
         1px 1px 0 #8f8f8f;
 }
 
-#title-home {
-    float:left;
-}
-
-#homeImg {
-    margin: auto;
-    max-height: 400px;
-    max-width: 100%;
-    display: block;
-    clear: both;
-}
-
-#homeTag    {
-    margin-top: 20px;
-    float: right;
-    font-size: 40px;
-}
-
-#aboutMe    {
-    width: 100%;
-    margin: 50px auto;
-    text-align: left;
-    font-size: 20px;
-    line-height: 2em;
-}
-
-#profImg    {
-    float: right;
-    width: 50%;
-}
-
-#skillsDisplay, #tagCanvas   {
-    width: 50%;
-}
-
-#skillsDisplay  {
-    float: left;
-}
-
-#tagCanvas  {
-    margin-top: 100px;
-    float: right;
-}
-
-#resume     {
-    font-size: 30px;
-    color: #660000;
-    text-decoration: none;
-}
-
-#resume:visited {
-    color: #993333;
-}
-
-#resume:hover  {
-    color: #996666;
-}
-
-.skill  {
-    margin: 20px auto;
-    border: 2px solid #4d4d4e;
-    border-radius: 10px;
-    background: #fff;
-    clear: both;
-    display: block;
-    width: 100%;
-    height: 150px;
-}
-
-.skill-img  {
-    max-width: 40%;
-    max-height: 90%;
-    margin: 5px;
-}
-
-.skill-L    {
-    float: left;
-    margin-left: 20px;
-}
-
-.skill-R    {
-    float: right;
-    margin-right: 20px;
-}
-
-.subtitle   {
-    margin: 5px;
-    color: #660000;
-    font-size: 28px;
-    line-height: 2em;
-}
-
-.skill p    {
-    margin: 5px;
-    font-size: 17px;
-    line-height: 1.5em;
-}
-
-#wordcloud  {
-    margin-top: 100px;
-    width: 100%;
-    height: auto;
-}
-
 #navbar {
     background: #cccccc;
     width: 60px;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 3;
-    min-height: 685px;
+    min-height: 500px;
     color: #fff;
     border-right: 1px solid #8f8f8f;
 }
@@ -231,6 +142,142 @@ nav {
 #navbar nav a:hover .fa-feather-alt:before   {
     content: "CONTACT";
 }
+
+
+
+/* Home Page Styling */
+
+#title-home {
+    float:left;
+}
+
+#homeImg {
+    margin: auto;
+    max-height: 400px;
+    max-width: 100%;
+    display: block;
+    clear: both;
+}
+
+#homeTag    {
+    margin-top: 20px;
+    float: right;
+    font-size: 40px;
+}
+
+
+
+/* About Me Page Styling */
+
+#aboutMe    {
+    width: 100%;
+    margin: 50px auto;
+    text-align: left;
+    font-size: 20px;
+    line-height: 2em;
+}
+
+#profImg    {
+    float: right;
+    width: 50%;
+}
+
+
+
+/* Skills Page Styling */
+
+#skillsDisplay, #tagCanvas   {
+    width: 50%;
+}
+
+#skillsDisplay  {
+    float: left;
+}
+
+#tagCanvas  {
+    margin-top: 80px;
+    float: right;
+}
+
+#resume     {
+    font-size: 30px;
+}
+
+.skill  {
+    margin: 20px auto;
+    border: 1px solid #4d4d4e;
+    border-radius: 10px;
+    background: #fff;
+    clear: both;
+    display: block;
+    width: 100%;
+    height: 150px;
+    box-shadow: 5px 5px 5px #4d4d4e;
+}
+
+.skill-img  {
+    max-width: 40%;
+    max-height: 90%;
+    margin: 5px;
+}
+
+.skill-L    {
+    float: left;
+    margin-left: 20px;
+}
+
+.skill-R    {
+    float: right;
+    margin-right: 20px;
+}
+
+.subtitle   {
+    margin: 5px;
+    color: #660000;
+    font-size: 28px;
+    line-height: 2em;
+}
+
+.skill p    {
+    margin: 5px;
+    font-size: 17px;
+    line-height: 1.5em;
+}
+
+#wordcloud  {
+    margin-top: 120px;
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* Portfolio Page Styling */
+
+#title-work {
+    margin-bottom: 30px;
+}
+
+.project-img    {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    box-shadow: 1px 1px 3px #4d4d4e;
+}
+
+.title-project  {
+    color: #660000;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.project-desc   {
+    display: block;
+    clear: both;
+}
+
+
+/* Responsive Style Changes for all elements on all pages */
 
 @media (max-width: 960px)   {
 
@@ -332,7 +379,7 @@ nav {
     }
 
     .title    {
-        font-size: 75px;
+        font-size: 70px;
     }
 
     .skill  {
@@ -373,7 +420,7 @@ nav {
 @media (max-width: 360px)   {
 
     #title-about, #title-skills {
-        font-size: 43px;
+        font-size: 40px;
     }
 
     .subtitle   {
