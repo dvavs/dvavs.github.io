@@ -30,6 +30,10 @@ body    {
         1px 1px 0 #8f8f8f;
 }
 
+#title-home {
+    float:left;
+}
+
 #homeImg {
     margin: auto;
     max-height: 400px;
@@ -66,7 +70,22 @@ body    {
 }
 
 #tagCanvas  {
+    margin-top: 100px;
     float: right;
+}
+
+#resume     {
+    font-size: 30px;
+    color: #660000;
+    text-decoration: none;
+}
+
+#resume:visited {
+    color: #993333;
+}
+
+#resume:hover  {
+    color: #996666;
 }
 
 .skill  {
@@ -225,8 +244,12 @@ nav {
         width: 100%;
     }
 
+    #tagCanvas  {
+        margin-top: 20px;
+    }
+
     #wordcloud  {
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     .skill  {
@@ -308,7 +331,7 @@ nav {
         margin: 0;
     }
 
-    #title-about, #title-skills    {
+    .title    {
         font-size: 75px;
     }
 
@@ -349,9 +372,12 @@ nav {
 
 @media (max-width: 360px)   {
 
+    #title-about, #title-skills {
+        font-size: 43px;
+    }
+
     .subtitle   {
         font-size: 16px;
-
     }
 
     .skill p    {
