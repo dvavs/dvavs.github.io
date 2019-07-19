@@ -205,7 +205,7 @@ nav {
 
 .skill  {
     margin: 20px auto;
-    border: 1px solid #4d4d4e;
+    border: 1px solid #8f8f8f;
     border-radius: 10px;
     background: #fff;
     clear: both;
@@ -254,6 +254,11 @@ nav {
 
 /* Portfolio Page Styling */
 
+.project    {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
 #title-work {
     margin-bottom: 30px;
 }
@@ -262,19 +267,41 @@ nav {
     max-width: 100%;
     height: auto;
     margin: 20px auto;
-    box-shadow: 1px 1px 3px #4d4d4e;
+    box-shadow: 2px 2px 5px #4d4d4e;
+}
+
+.project-info   {
+    text-align: left;
+}
+
+
+.project-info p {
+    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .title-project  {
     color: #660000;
-    font-size: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.project-sum   {
+    text-align: left;
+    width: 50%;
+    float: right;
+}
+
+.project-head   {
     font-weight: bold;
 }
 
-.project-desc   {
-    display: block;
-    clear: both;
+#seeMore    {
+    margin: 0 auto;
+    font-weight: bold;
 }
+
 
 
 /* Responsive Style Changes for all elements on all pages */
@@ -386,7 +413,10 @@ nav {
         width: 100%;
     }
 
-
+    .project-info p {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
 
 }
 
@@ -399,6 +429,15 @@ nav {
 
     .title    {
         font-size: 50px;
+    }
+
+    .title-project  {
+        font-size: 30px;
+    }
+
+    .project-info p {
+        font-size: 16px;
+        margin-bottom: 10px;
     }
 
     #homeTag    {
@@ -421,6 +460,10 @@ nav {
 
     #title-about, #title-skills {
         font-size: 40px;
+    }
+
+    .title-project  {
+        font-size: 24px;
     }
 
     .subtitle   {
