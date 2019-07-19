@@ -1,2 +1,5 @@
-# Bootstrap-Portfolio
-Recreating the personal portfolio from Homework 1 of the UR Coding Bootcamp, this time using Bootstrap.
+# Personal Website
+
+My personal website, built using custom CSS (no framework) and as little JavaScript as possible.
+
+[Deployed website]("https://dvavs.github.io").
