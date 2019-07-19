@@ -304,6 +304,29 @@ nav {
 
 
 
+/* Contact Page Styling */
+
+#contact-img  {
+    padding: 20px;
+    float: left;
+    width: 50%;
+}
+
+#contact-details    {
+    margin-top: 50px;
+    padding: 20px;
+    float: right;
+    width: 50%;
+    text-align: left;
+    font-size: 18px;
+}
+
+#contact-details p  {
+    margin-bottom: 20px;
+}
+
+
+
 /* Responsive Style Changes for all elements on all pages */
 
 @media (max-width: 960px)   {
@@ -418,6 +441,11 @@ nav {
         margin-bottom: 12px;
     }
 
+    #contact-details    {
+        font-size: 14px;
+        margin-top: 30px;
+    }
+
 }
 
 @media (max-width: 500px)   {
@@ -452,6 +480,12 @@ nav {
 
     .skill p    {
         line-height: 1.2em;
+    }
+
+    #contact-details    {
+        margin-top: 20px;
+        padding: 0;
+        font-size: 12px;
     }
 
 }
