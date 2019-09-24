@@ -39,10 +39,7 @@ a:hover  {
     font-size: 100px;
     text-shadow:
         3px 3px 0 #000,
-        -1px -1px 0 #8f8f8f,  
-        1px -1px 0 #8f8f8f,
-        -1px 1px 0 #8f8f8f,
-        1px 1px 0 #8f8f8f;
+        -1px -1px 0 #8f8f8f;
 }
 
 #navbar {
@@ -163,6 +160,7 @@ nav {
     margin-top: 20px;
     float: right;
     font-size: 40px;
+    font-family: 'Caveat', cursive;
 }
 
 
@@ -463,6 +461,9 @@ nav {
 
     .title    {
         font-size: 50px;
+        text-shadow:
+            1.5px 1.5px 0 #000,
+            -0.5px -0.5px 0 #8f8f8f;
     }
 
     .title-project  {
