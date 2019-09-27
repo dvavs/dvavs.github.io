@@ -13,7 +13,9 @@ body    {
     background-attachment: fixed;
     background-size: cover;
     background-color: #5A6632;
-    min-height: 100vh;
+    overflow: scroll;
+    height: inherit;
+    max-height: inherit;
 }
 
 a   {
