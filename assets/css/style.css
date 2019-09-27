@@ -6,44 +6,49 @@
 
 body    {
     font-family: helvetica, tahoma, verdana, sans-serif;
-    color: #070707;
-    background: #fcfcfc;
+    color: #000;
+    background-image: url(https://images.unsplash.com/photo-1445187118261-1593a5af9bdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #5A6632;
 }
 
 a   {
-    color: #660000;
+    color: #5A6632;
     text-decoration: none;
 }
 
 a:visited {
-    color: #993333;
+    color: #684B27;
 }
 
 a:hover  {
-    color: #996666;
+    color: #D8AA2B;
 }
 
 .content    {
     text-align: center;
-    margin: 40px 10px 0 10%;
+    margin: 20px 10px 0 10%;
     padding: 0 20px 20px;
     max-width: 960px;
     max-height: 100%;
 }
 
 .title    {
-    margin-bottom: 15px;
-    font-family: 'Caveat', cursive;
-    color: #660000;
     font-weight: bold;
     font-size: 100px;
-    text-shadow:
-        3px 3px 0 #000,
-        -1px -1px 0 #8f8f8f;
+}
+
+.title-row  {
+    width: 100%;
+    display: table;
+    clear: both;
 }
 
 #navbar {
-    background: #cccccc;
+    background: #4D4D4D;
     width: 60px;
     height: 100%;
     position: fixed;
@@ -51,7 +56,7 @@ a:hover  {
     z-index: 3;
     min-height: 500px;
     color: #fff;
-    border-right: 1px solid #8f8f8f;
+    
 }
 
 .logo   {
@@ -92,13 +97,13 @@ nav {
 }
 
 #navbar a.active, #navbar a:hover   {
-    color: #660000;
+    color: #D8AA2B;
     text-decoration: none;
 }
 
 #navbar a   {
     font-size: 22px;
-    color: #4d4d4e;
+    color: #AAA;
     display: block;
     line-height: 51px;
     height: 51px;
@@ -145,22 +150,13 @@ nav {
 /* Home Page Styling */
 
 #title-home {
-    float:left;
+    float:right;
 }
 
-#homeImg {
-    margin: auto;
-    max-height: 400px;
-    max-width: 100%;
-    display: block;
-    clear: both;
-}
 
 #homeTag    {
-    margin-top: 20px;
     float: right;
     font-size: 40px;
-    font-family: 'Caveat', cursive;
 }
 
 
@@ -173,6 +169,9 @@ nav {
     text-align: left;
     font-size: 20px;
     line-height: 2em;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    padding: 20px;
 }
 
 #profImg    {
@@ -203,20 +202,12 @@ nav {
 
 .skill  {
     margin: 20px auto;
-    border: 1px solid #8f8f8f;
-    border-radius: 10px;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
     clear: both;
     display: block;
     width: 100%;
     height: 150px;
-    box-shadow: 5px 5px 5px #4d4d4e;
-}
-
-.skill-img  {
-    max-width: 40%;
-    max-height: 90%;
-    margin: 5px;
 }
 
 .skill-L    {
@@ -231,7 +222,6 @@ nav {
 
 .subtitle   {
     margin: 5px;
-    color: #660000;
     font-size: 28px;
     line-height: 2em;
 }
@@ -256,6 +246,10 @@ nav {
 .project    {
     width: 100%;
     margin-bottom: 50px;
+    background: rgba(255, 255, 255, .5);
+    padding: 1px;
+    border-radius: 20px;
+    margin: 50px auto;
 }
 
 #title-work {
@@ -265,12 +259,13 @@ nav {
 .project-img    {
     max-width: 100%;
     height: auto;
-    margin: 20px auto;
-    box-shadow: 2px 2px 5px #4d4d4e;
+    margin: 0 auto;
+    border-radius: 20px;
 }
 
 .project-info   {
     text-align: left;
+    padding: 20px;
 }
 
 
@@ -280,7 +275,6 @@ nav {
 }
 
 .title-project  {
-    color: #660000;
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -305,19 +299,14 @@ nav {
 
 /* Contact Page Styling */
 
-#contact-img  {
-    padding: 20px;
-    float: left;
-    width: 50%;
-}
-
 #contact-details    {
-    margin-top: 50px;
+    margin: 50px auto 0;
     padding: 20px;
-    float: right;
+    text-align: center;
     width: 50%;
-    text-align: left;
     font-size: 18px;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 20px;
 }
 
 #contact-details p  {
@@ -366,7 +355,6 @@ nav {
         z-index: 3;
         min-height: 0;
         border-right: none;
-        border-bottom: 1px solid #8f8f8f;
     }
 
     .logo   {
@@ -461,9 +449,6 @@ nav {
 
     .title    {
         font-size: 50px;
-        text-shadow:
-            1.5px 1.5px 0 #000,
-            -0.5px -0.5px 0 #8f8f8f;
     }
 
     .title-project  {
@@ -485,18 +470,12 @@ nav {
         line-height: 1.1em;
     }
 
-    .skill p    {
-        line-height: 1.2em;
+    #contact-details    {
+        width: 75%;
     }
 
-    #contact-details    {
-        display: block;
-        clear: both;
-        width: 100%;
-        text-align: center;
-        margin-top: 20px;
-        padding: 0;
-        font-size: 16px;
+    .skill p    {
+        line-height: 1.2em;
     }
 
     #contact-img    {
@@ -509,7 +488,7 @@ nav {
 
 @media (max-width: 360px)   {
 
-    #title-about, #title-skills {
+    .title {
         font-size: 40px;
     }
 
@@ -521,6 +500,10 @@ nav {
         font-size: 16px;
     }
 
+    #contact-details {
+        width: 100%;
+    }
+
     .skill p    {
         font-size: 12px;
         line-height: 1em;
@@ -530,4 +513,210 @@ nav {
         width: 45px;
     }
 
+}
+
+
+
+/* Animations */
+
+/* Fade in */
+
+@keyframes fadeIn {
+
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    
+    from {
+        opacity: 0;
+      }
+    
+      to {
+        opacity: 1;
+      }
+}
+
+@-moz-keyframes fadeIn {
+    
+    from {
+        opacity: 0;
+      }
+    
+      to {
+        opacity: 1;
+      }
+}
+
+@-ms-keyframes fadeIn {
+    
+    from {
+        opacity: 0;
+      }
+    
+      to {
+        opacity: 1;
+      }
+}
+
+@-o-keyframes fadeIn {
+    
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+}
+
+/* Fade in with vertical motion */
+
+@keyframes fadeInUp {
+
+    from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    
+    from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+}
+
+@-moz-keyframes fadeInUp {
+    
+    from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+}
+
+@-ms-keyframes fadeInUp {
+    
+    from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+}
+
+@-o-keyframes fadeInUp {
+    
+    from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeIn {
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -ms-animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+
+    animation-fill-mode: both;
+    
+    -webkit-animation-name: fadeIn;
+    -moz-animation-name: fadeIn;
+    -ms-animation-name: fadeIn;
+    -o-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+  
+.fadeInUp1 {
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+
+    animation-fill-mode: none;
+    
+    -webkit-animation-name: fadeInUp;
+    -moz-animation-name: fadeInUp;
+    -ms-animation-name: fadeInUp;
+    -o-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+.fadeInUp2 {
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -ms-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -ms-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
+
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    -o-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+
+    animation-fill-mode: both;
+    
+    -webkit-animation-name: fadeInUp;
+    -moz-animation-name: fadeInUp;
+    -ms-animation-name: fadeInUp;
+    -o-animation-name: fadeInUp;
+    animation-name: fadeInUp;
 }
