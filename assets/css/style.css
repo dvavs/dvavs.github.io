@@ -13,9 +13,7 @@ body    {
     background-attachment: fixed;
     background-size: cover;
     background-color: #5A6632;
-    overflow: scroll;
-    height: inherit;
-    max-height: inherit;
+    min-height: 100vh;
 }
 
 a   {
@@ -186,6 +184,13 @@ nav {
 
 /* Skills Page Styling */
 
+#skills  {
+    margin: 50px auto;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    padding: 20px;
+}
+
 #skillsDisplay, #tagCanvas   {
     width: 50%;
 }
@@ -320,7 +325,7 @@ nav {
 
 /* Responsive Style Changes for all elements on all pages */
 
-@media (max-width: 960px)   {
+@media screen and (max-width: 960px)   {
 
     .content    {
         margin: 70px auto;
@@ -411,7 +416,7 @@ nav {
 
 }
 
-@media (max-width: 640px)    {
+@media screen and (max-width: 640px)    {
 
     nav {
         position: absolute;
@@ -443,7 +448,7 @@ nav {
 
 }
 
-@media (max-width: 500px)   {
+@media screen and (max-width: 500px)   {
 
     #navbar ul  {
         width: 0;
@@ -489,7 +494,7 @@ nav {
 
 }
 
-@media (max-width: 360px)   {
+@media screen and (max-width: 360px)   {
 
     .title {
         font-size: 40px;
