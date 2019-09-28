@@ -13,7 +13,7 @@ body    {
     background-attachment: fixed;
     background-size: cover;
     background-color: #5A6632;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 a   {
