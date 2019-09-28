@@ -7,13 +7,18 @@
 body    {
     font-family: helvetica, tahoma, verdana, sans-serif;
     color: #000;
-    background-image: url(https://images.unsplash.com/photo-1445187118261-1593a5af9bdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+    background-image: url("../images/forest-bg-3000px.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-color: #5A6632;
-    height: 100vh;
+    height: 85vh;
+}
+
+p   {
+    font-size: 18px;
+    line-height: 2;
 }
 
 a   {
@@ -30,7 +35,7 @@ a:hover  {
 }
 
 .content    {
-    text-align: center;
+    text-align: left;
     margin: 20px 10px 0 10%;
     padding: 0 20px 20px;
     max-width: 960px;
@@ -38,6 +43,7 @@ a:hover  {
 }
 
 .title    {
+    text-align: center;
     font-weight: bold;
     font-size: 100px;
 }
@@ -175,11 +181,6 @@ nav {
     padding: 20px;
 }
 
-#profImg    {
-    float: right;
-    width: 50%;
-}
-
 
 
 /* Skills Page Styling */
@@ -197,16 +198,44 @@ nav {
     line-height: 1.5em;
 }
 
-#resume     {
-    font-size: 30px;
+.skills-list p  {
+    font-weight: bold;
+    line-height: 2;
 }
 
-.subtitle   {
-    margin: 5px;
+.doc-links     {
+    font-size: 20px;
+}
+
+.skill-title   {
+    font-weight: bold;
+    margin: 5px 0px;
     font-size: 28px;
     line-height: 2em;
 }
 
+.dev-list {
+    width: 50%;
+    float: left;
+    margin-bottom: 50px;
+}
+
+.skills-list li::before  {
+    content: "\27A4";
+    color: #5A6632;
+    margin-right: 5px;
+    line-height: 1.5;
+}
+
+.skills-list::after{
+    display: block;
+    clear: both;
+}
+
+hr  {
+    border-color: rgba(0, 0, 0, .25);
+    margin: 50px 0 20px;
+}
 
 
 /* Portfolio Page Styling */
@@ -238,7 +267,6 @@ nav {
 
 
 .project-info p {
-    font-size: 16px;
     margin-bottom: 20px;
 }
 
@@ -259,8 +287,22 @@ nav {
 }
 
 #seeMore    {
-    margin: 0 auto;
-    font-weight: bold;
+    text-align: center;
+    margin: 0 auto 20px;
+}
+
+#seeMore button {
+    font-size: 20px;
+    background: #684B27;
+    color: #FFF;
+    border: #FFF 2px solid;
+    border-radius: 15px;
+    outline: none;
+}
+
+#seeMore button:hover   {
+    background: #D8AA2B;
+    cursor: pointer;
 }
 
 
@@ -287,17 +329,12 @@ nav {
 
 @media screen and (max-width: 960px)   {
 
+    body    {
+        background-image: url("../images/forest-bg-1000px.jpg");
+    }
+
     .content    {
         margin: 70px auto;
-    }
-
-    #wordcloud  {
-        margin-top: 20px;
-    }
-
-    .skill  {
-        width: 70%;
-        height: 100px;
     }
 
     .subtitle   {
@@ -359,11 +396,6 @@ nav {
         margin: 0 10px;
     }
 
-    #wordcloud  {
-        display: block;
-        clear: both;
-    }
-
 }
 
 @media screen and (max-width: 640px)    {
@@ -378,16 +410,16 @@ nav {
         margin: 0;
     }
 
+    p   {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
     .title    {
         font-size: 70px;
     }
 
-    .skill  {
-        width: 100%;
-    }
-
     .project-info p {
-        font-size: 18px;
         margin-bottom: 12px;
     }
 
@@ -414,7 +446,6 @@ nav {
     }
 
     .project-info p {
-        font-size: 16px;
         margin-bottom: 10px;
     }
 
@@ -422,29 +453,17 @@ nav {
         font-size: 20px;
     }
 
-    .subtitle   {
-        font-size: 22px;
-        font-weight: bold;
-        line-height: 1.1em;
-    }
-
     #contact-details    {
         width: 75%;
-    }
-
-    .skill p    {
-        line-height: 1.2em;
-    }
-
-    #contact-img    {
-        display: block;
-        clear: both;
-        width: 100%;
     }
 
 }
 
 @media screen and (max-width: 360px)   {
+
+    .project-info p   {
+        font-size: 14px;
+    }
 
     .title {
         font-size: 40px;
@@ -460,11 +479,6 @@ nav {
 
     #contact-details {
         width: 100%;
-    }
-
-    .skill p    {
-        font-size: 12px;
-        line-height: 1em;
     }
 
     #navbar i   {
@@ -536,7 +550,7 @@ nav {
 
 /* Fade in with vertical motion */
 
-@keyframes fadeInUp {
+@keyframes fadeUp {
 
     from {
       opacity: 0;
@@ -549,7 +563,7 @@ nav {
     }
 }
 
-@-webkit-keyframes fadeInUp {
+@-webkit-keyframes fadeUp {
     
     from {
       opacity: 0;
@@ -562,7 +576,7 @@ nav {
     }
 }
 
-@-moz-keyframes fadeInUp {
+@-moz-keyframes fadeUp {
     
     from {
       opacity: 0;
@@ -575,7 +589,7 @@ nav {
     }
 }
 
-@-ms-keyframes fadeInUp {
+@-ms-keyframes fadeUp {
     
     from {
       opacity: 0;
@@ -588,7 +602,7 @@ nav {
     }
 }
 
-@-o-keyframes fadeInUp {
+@-o-keyframes fadeUp {
     
     from {
       opacity: 0;
@@ -598,6 +612,63 @@ nav {
     to {
       opacity: 1;
       transform: translate3d(0, 0, 0);
+    }
+}
+
+/* Grow */
+
+@keyframes grow {
+
+    from {
+        transform: scale3d(1, 1, 1);
+      }
+    
+      to {
+          transform: scale3d(1.1, 1.1, 1.1);
+      }
+}
+
+@-webkit-keyframes grow {
+
+    from {
+        transform: scale3d(1, 1, 1);
+      }
+    
+      to {
+        transform: scale3d(1.1, 1.1, 1.1);
+      }
+}
+
+@-moz-keyframes grow {
+
+    from {
+        transform: scale3d(1, 1, 1);
+      }
+    
+      to {
+        transform: scale3d(1.1, 1.1, 1.1);
+      }
+}
+  
+@-ms-keyframes grow {
+
+    from {
+        transform: scale3d(1, 1, 1);
+      }
+    
+      to {
+        transform: scale3d(1.1, 1.1, 1.1);
+      }
+}
+
+@-o-keyframes grow {
+
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    to {
+        transform: scale3d(1.1, 1.1, 1.1);
     }
 }
 
@@ -628,30 +699,8 @@ nav {
     -o-animation-name: fadeIn;
     animation-name: fadeIn;
 }
-  
-.fadeInUp1 {
-    -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    -ms-animation-duration: 2s;
-    -o-animation-duration: 2s;
-    animation-duration: 2s;
 
-    -webkit-animation-iteration-count: 1;
-    -moz-animation-iteration-count: 1;
-    -ms-animation-iteration-count: 1;
-    -o-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-
-    animation-fill-mode: none;
-    
-    -webkit-animation-name: fadeInUp;
-    -moz-animation-name: fadeInUp;
-    -ms-animation-name: fadeInUp;
-    -o-animation-name: fadeInUp;
-    animation-name: fadeInUp;
-}
-
-.fadeInUp2 {
+.fadeUp {
     -webkit-animation-duration: 1s;
     -moz-animation-duration: 1s;
     -ms-animation-duration: 1s;
@@ -672,9 +721,26 @@ nav {
 
     animation-fill-mode: both;
     
-    -webkit-animation-name: fadeInUp;
-    -moz-animation-name: fadeInUp;
-    -ms-animation-name: fadeInUp;
-    -o-animation-name: fadeInUp;
-    animation-name: fadeInUp;
+    -webkit-animation-name: fadeUp;
+    -moz-animation-name: fadeUp;
+    -ms-animation-name: fadeUp;
+    -o-animation-name: fadeUp;
+    animation-name: fadeUp;
+}
+
+.grow:hover {
+
+    -webkit-animation-duration: .2s;
+    -moz-animation-duration: .2s;
+    -ms-animation-duration: .2s;
+    -o-animation-duration: .2s;
+    animation-duration: .2s;
+
+    animation-fill-mode: both;
+
+    -webkit-animation-name: grow;
+    -moz-animation-name: grow;
+    -ms-animation-name: grow;
+    -o-animation-name: grow;
+    animation-name: grow;
 }
