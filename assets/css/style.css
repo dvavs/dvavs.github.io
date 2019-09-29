@@ -9,6 +9,10 @@ html, body  {
     padding: 0;
 }
 
+html    {
+    height: 100vh;
+}
+
 body    {
     font-family: helvetica, tahoma, verdana, sans-serif;
     color: #000;
@@ -18,7 +22,7 @@ body    {
     background-attachment: fixed;
     background-size: cover;
     background-color: #5A6632;
-    height: 80vh;
+    height: 100%;
     z-index: 0;
 }
 
