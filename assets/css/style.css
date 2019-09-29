@@ -15,7 +15,7 @@ body    {
     -o-background-size: cover;
     background-size: cover;
     background-color: #5A6632;
-    height: 100%;
+    height: 100vh;
     z-index: 0;
 }
 
