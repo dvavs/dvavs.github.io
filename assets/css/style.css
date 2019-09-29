@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-html, body  {
-    margin: 0;
-    padding: 0;
-}
 
 body    {
     font-family: helvetica, tahoma, verdana, sans-serif;
@@ -17,8 +13,12 @@ body    {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
     background-color: #5A6632;
-    height: inherit;
+    height: 100%;
     z-index: 0;
 }
 
