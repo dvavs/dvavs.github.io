@@ -13,7 +13,8 @@ body    {
     background-attachment: fixed;
     background-size: cover;
     background-color: #5A6632;
-    height: 80vh;
+    height: 100%;
+    z-index: 0;
 }
 
 p   {
@@ -46,6 +47,7 @@ a:hover  {
     text-align: center;
     font-weight: bold;
     font-size: 100px;
+    z-index: 5;
 }
 
 .title-row  {
@@ -60,10 +62,9 @@ a:hover  {
     height: 100%;
     position: fixed;
     top: 0;
-    z-index: 3;
+    z-index: 5;
     min-height: 500px;
     color: #fff;
-    
 }
 
 .logo   {
@@ -164,6 +165,7 @@ nav {
 #homeTag    {
     float: right;
     font-size: 40px;
+    z-index: 5;
 }
 
 
@@ -495,55 +497,55 @@ hr  {
 
 @keyframes fadeIn {
 
-    from {
+    0% {
       opacity: 0;
     }
   
-    to {
+    100% {
       opacity: 1;
     }
 }
 
 @-webkit-keyframes fadeIn {
     
-    from {
+    0% {
         opacity: 0;
       }
     
-      to {
+      100% {
         opacity: 1;
       }
 }
 
 @-moz-keyframes fadeIn {
     
-    from {
+    0% {
         opacity: 0;
       }
     
-      to {
+      100% {
         opacity: 1;
       }
 }
 
 @-ms-keyframes fadeIn {
     
-    from {
+    0% {
         opacity: 0;
       }
     
-      to {
+      100% {
         opacity: 1;
       }
 }
 
 @-o-keyframes fadeIn {
     
-    from {
+    0% {
       opacity: 0;
     }
   
-    to {
+    100% {
       opacity: 1;
     }
 }
@@ -552,12 +554,12 @@ hr  {
 
 @keyframes fadeUp {
 
-    from {
+    0% {
       opacity: 0;
       transform: translate3d(0, 100%, 0);
     }
   
-    to {
+    100% {
       opacity: 1;
       transform: translate3d(0, 0, 0);
     }
@@ -565,12 +567,12 @@ hr  {
 
 @-webkit-keyframes fadeUp {
     
-    from {
+    0% {
       opacity: 0;
       transform: translate3d(0, 100%, 0);
     }
   
-    to {
+    100% {
       opacity: 1;
       transform: translate3d(0, 0, 0);
     }
@@ -578,12 +580,12 @@ hr  {
 
 @-moz-keyframes fadeUp {
     
-    from {
+    0% {
       opacity: 0;
       transform: translate3d(0, 100%, 0);
     }
   
-    to {
+    100% {
       opacity: 1;
       transform: translate3d(0, 0, 0);
     }
@@ -591,12 +593,12 @@ hr  {
 
 @-ms-keyframes fadeUp {
     
-    from {
+    0% {
       opacity: 0;
       transform: translate3d(0, 100%, 0);
     }
   
-    to {
+    100% {
       opacity: 1;
       transform: translate3d(0, 0, 0);
     }
@@ -604,12 +606,12 @@ hr  {
 
 @-o-keyframes fadeUp {
     
-    from {
+    0% {
       opacity: 0;
       transform: translate3d(0, 100%, 0);
     }
   
-    to {
+    100% {
       opacity: 1;
       transform: translate3d(0, 0, 0);
     }
@@ -619,57 +621,118 @@ hr  {
 
 @keyframes grow {
 
-    from {
+    0% {
         transform: scale3d(1, 1, 1);
       }
     
-      to {
+      100% {
           transform: scale3d(1.1, 1.1, 1.1);
       }
 }
 
 @-webkit-keyframes grow {
 
-    from {
+    0% {
         transform: scale3d(1, 1, 1);
       }
     
-      to {
+      100% {
         transform: scale3d(1.1, 1.1, 1.1);
       }
 }
 
 @-moz-keyframes grow {
 
-    from {
+    0% {
         transform: scale3d(1, 1, 1);
       }
     
-      to {
+      100% {
         transform: scale3d(1.1, 1.1, 1.1);
       }
 }
   
 @-ms-keyframes grow {
 
-    from {
+    0% {
         transform: scale3d(1, 1, 1);
       }
     
-      to {
+      100% {
         transform: scale3d(1.1, 1.1, 1.1);
       }
 }
 
 @-o-keyframes grow {
 
-    from {
+    0% {
       transform: scale3d(1, 1, 1);
     }
   
-    to {
+    100% {
         transform: scale3d(1.1, 1.1, 1.1);
     }
+}
+
+/* Side Scroll */
+
+@keyframes sideScroll {
+
+    0%  {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-200vw, 0, 0)
+    }
+}
+
+@-webkit-keyframes sideScroll {
+
+    0%  {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-200vw, 0, 0)
+    }
+
+}
+
+@-moz-keyframes sideScroll {
+
+    0%  {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-200vw, 0, 0)
+    }
+
+}
+
+@-ms-keyframes sideScroll {
+
+    0%  {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-200vw, 0, 0)
+    }
+
+}
+
+@-o-keyframes sideScroll {
+
+    0%  {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-200vw, 0, 0)
+    }
+
 }
 
 .fadeIn {
