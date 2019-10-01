@@ -15,8 +15,7 @@ body    {
     -o-background-size: cover;
     background-size: cover;
     background-color: #5A6632;
-    height: 100vh;
-    z-index: 0;
+    height: 100%;
 }
 
 p   {
@@ -171,18 +170,17 @@ nav {
 }
 
 .fog    {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: 1;
 }
 
 .fog-img    {
     position: absolute;
     height: 100vh;
     width: 300vw;
-    z-index: 2;
+    z-index: 1;
 }
 
 #fog-img-1  {
