@@ -8,13 +8,13 @@
 body    {
     font-family: helvetica, tahoma, verdana, sans-serif;
     color: #000;
-    background: url("../images/forest-bg-3000px.jpg") no-repeat center center fixed;
+    background: url("../images/forest-bg-2000px.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-color: #5A6632;
+    background-color: #C2C2CA;
     height: 100vh;
 }
 
@@ -483,6 +483,10 @@ hr  {
 }
 
 @media screen and (max-width: 500px)   {
+
+    body    {
+        background-image: url("../images/forest-bg-500px.jpg");
+    }
 
     #navbar ul  {
         width: 0;
