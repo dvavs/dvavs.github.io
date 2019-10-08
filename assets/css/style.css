@@ -285,12 +285,25 @@ hr  {
 /* Portfolio Page Styling */
 
 .project    {
-    width: 100%;
+    width: 48%;
     margin-bottom: 50px;
     background: rgba(255, 255, 255, .5);
     padding: 1px;
     border-radius: 20px;
-    margin: 50px auto;
+}
+
+.project-left   {
+    float: left;
+}
+
+.project-right  {
+    float: right;
+}
+
+.row-break  {
+    display: block;
+    clear: both;
+    width: 100%;
 }
 
 #title-work {
@@ -442,6 +455,19 @@ hr  {
 
 }
 
+@media screen and (max-width: 840px)    {
+
+    .project    {
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    .project-left, .project-right   {
+        float: none;
+    }
+
+}
+
 @media screen and (max-width: 640px)    {
 
     nav {
@@ -461,6 +487,11 @@ hr  {
 
     .title    {
         font-size: 70px;
+    }
+
+    .project    {
+        width: 100%;
+        margin: 50px auto;
     }
 
     .project-info p {
