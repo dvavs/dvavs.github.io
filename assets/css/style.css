@@ -489,6 +489,10 @@ hr  {
         font-size: 70px;
     }
 
+    #homeTag    {
+        font-size: 30px;
+    }
+
     .project    {
         width: 100%;
         margin: 50px auto;
