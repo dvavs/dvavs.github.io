@@ -472,7 +472,7 @@ hr  {
 
     nav {
         position: absolute;
-        left: 20%;
+        left: 25%;
     }
 
     #navbar ul li   {
@@ -518,6 +518,11 @@ hr  {
     #navbar ul  {
         width: 0;
         display: none;
+    }
+
+    nav {
+        position: absolute;
+        left: 20%;
     }
 
     .title    {
